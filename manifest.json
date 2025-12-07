@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Açık Kaynak Sahte Mail Filtresi",
+  "version": "1.0",
+  "description": "Gizlenmiş fake mailleri filtreler ve gerçek kaynağı gösterir.",
+  "icons": {
+    "128": "FakeMailFilter.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"], 
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
